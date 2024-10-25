@@ -1,0 +1,417 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+.contenedor-icono{
+
+ width: 225px;
+ height: 325px;
+ color:black;
+ float: center;
+
+}
+
+.contenedor-letra{
+
+    text-align: center;
+    font-size: medium;
+   
+
+}
+
+/* titulo de las noticias del inicio */
+
+.tit-inicio{
+
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card-body{
+
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: left;
+}
+
+.card-text{
+
+    text-align: left;
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+.card{
+
+    border-color: #f1f1f1;
+    min-width: 700 px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+    transition: all .4s ease-in-out;
+
+        border-radius: 10px; /* Bordes redondeados */
+
+        border-radius: 10px; /* Bordes redondeados */
+        border: 1px solid #ccc; /* Borde transparente por defecto */
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.5); /* Efecto de sombra transparente */
+}
+.card img {
+    border-radius: 10px; /* Bordes redondeados para las imágenes dentro de las tarjetas */
+}
+
+.card:hover{
+    transform: scale(1.2);
+    border-color: black; /* Cambia el color del borde al pasar el ratón */
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); /* Añade una sombra al contorno */
+
+}
+
+/*boton ver museos*/
+.btn.btn--3 a.btn-dark {
+    color: white; /* Color de texto original */
+}
+
+.btn.btn--3 a.btn-dark:hover {
+    color: black; /* Color de texto al pasar el mouse */
+    background-color: #fbbb14; /* Color de fondo al pasar el mouse */
+}
+
+
+/* Estilos para tamaños pequeños (dispositivos móviles) */
+@media (max-width: 991px) {
+    .navbar-nav .nav-item.show .nav-link,
+    .navbar-nav .nav-item.active .nav-link {
+        background-color: #fbbb14; /* Cambia este color según tus preferencias */
+    }
+}
+
+
+
+/* Estilo para el navbar */
+.navbar-nav .nav-link:hover {
+    color: yellow !important; /* Cambia el color del texto al pasar el mouse */
+  }
+
+.logo {
+    width: 50px; /* Define el ancho deseado para la imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente manteniendo la proporción */
+}  
+
+/* Estilo para el navbar */
+.navbar-nav .nav-link:hover {
+    color: yellow !important; /* Cambia el color del texto al pasar el mouse */
+  }
+  
+  
+  #enviarBtn {
+      background-color: #ffc107; /* Color de fondo original */
+      border-color: #ffc107; /* Color del borde original */
+      color: #000; /* Color del texto original */
+    }
+  
+    /* Estilo para el botón al pasar el mouse sobre él */
+    #enviarBtn:hover {
+      background-color: #000; /* Cambia el color de fondo al pasar el mouse */
+      border-color: #ffc107; /* Cambia el color del borde al pasar el mouse */
+      color: #fff; /* Cambia el color del texto al pasar el mouse */
+    }
+    .form-control:focus {
+      border-color: #ffc107 !important; /* Cambia el color del borde cuando el campo está enfocado */
+      box-shadow: 0 0 0 0.25rem rgb(255 193 7 / 25%); /* Agrega un efecto de sombra al campo enfocado */
+    }
+  
+
+/* Estilos para tamaños pequeños (dispositivos móviles) */
+@media (max-width: 991px) {
+    .navbar-nav .nav-item.show .nav-link,
+    .navbar-nav .nav-item.active .nav-link {
+        background-color: #fbbb14; /* Cambia este color según tus preferencias */
+    }
+}
+
+.cuadros {
+    border-color: #000000;
+    min-height: 300px; /* Establecemos una altura mínima para los cuadros */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cuadros img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cuadros:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #000000, 0 0 20px #ffdd17, 0 0 20px #ffdd17;
+    color: #434343;
+}
+
+.cuadros::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    background-color: #ffdd17;
+    transition: all 500ms ease;
+    z-index: -1;
+}
+
+/* Reglas de medios para ajustar el tamaño del cuadro en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .cuadros {
+        min-height: unset; /* Eliminamos la altura mínima en pantallas pequeñas */
+    }
+}
+
+/* Regla para eliminar la altura mínima en el rango problemático */
+@media (min-width: 770px) and (max-width: 990px) {
+    .cuadros {
+        min-height: auto !important; /* Sobrescribimos cualquier altura mínima establecida anteriormente */
+        margin-bottom: 15px; /* Ajustamos el margen inferior para una mejor alineación */
+    }
+}
+
+
+.info {
+    border: 1px solid #000000;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    border-radius: 10px;
+    max-width: 100%;
+    font-family: 'Montserrat';
+    margin-bottom: 20px; /* Agrega un margen inferior entre los cuadros */
+}
+
+.info:hover {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 20px #ffdd17;
+    color: #434343;
+}
+
+.info img {
+    width: 100%;
+    height: auto;
+    max-height: 160px; /* Ajusta la altura máxima según tus necesidades */
+    object-fit: cover;
+    border-bottom: 1px solid #000000;
+}
+
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 576px) {
+    .info img {
+        border-bottom: none;
+    }
+    
+    .info:hover img {
+        transform: scale(1.1);
+    }
+}
+
+/* Ajustes para pantallas medianas y grandes (de 577px a 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+    .info {
+        max-width: 100%;
+    }
+}
+
+footer {
+    background: #000000;
+    min-height: 50px;
+    color: #f3f3f3;
+    text-align: center;
+    width: 100%; /* Hace que el footer ocupe todo el ancho */
+    font-family: 'Lato';
+    font-size: 14px;
+}
+
+
+#title-apps{
+
+    
+    text-align: left;
+    font-family: 'Montserrat';
+    font-size: 25px;
+}
+
+
+.parrafo{
+
+    font-family: 'Roboto';
+    font-size: 18px;
+}
+
+
+#color{
+
+    background-color: #000000;
+    height: 600px;
+    color:#f1f1f1;
+}
+
+/* edicion js y html formulario */
+
+.casilla {
+    border: 1px solid black;
+    transition: border-color 0.3s;
+    outline: none; /* Elimina el contorno predeterminado del navegador */
+  }
+  
+.casilla-clicked {
+    border-color: #ffdd17;
+  }
+
+.casilla:focus {
+    border-color: #ffdd17 !important; /* Cambia el color del borde al hacer clic */
+    box-shadow: 0 0 0 0.2rem #ffdd17; /* Cambia el sombreado al hacer clic */
+  }
+  
+  
+#consulta{
+
+    color: white;
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.mb-3{
+
+     font-family: 'Montserrat', sans-serif;
+     
+}
+
+/*Botones de las redes sociales*/
+
+.buttons {
+    padding-top: 20px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    margin: 8px;
+    padding: 8px 20px; /* Ajusta el relleno según tus preferencias para tamaños de pantalla más grandes */
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-family: 'montserrat';
+    font-size: 14px;
+}
+
+.social-button:hover {
+    background-color: #ffdd17;
+    color: #000000;
+}
+
+.social-icon {
+    margin-right: 10px; /* Reducido para mejorar el espaciado */
+    font-size: 24px; /* Ajusta según sea necesario */
+}
+
+.social-name {
+    text-align: center;
+    margin-left: 10px; /* Reducido para mejorar el espaciado */
+}
+
+.texto-personalizado {
+    text-align: left; /* Alineación predeterminada */
+}
+
+/* Alineación en pantallas pequeñas (hasta 430px) */
+@media (max-width: 430px) {
+    .texto-personalizado, .social-button {
+        text-align: center; /* Alineación al centro en pantallas pequeñas */
+        margin-left: 0; /* Elimina el margen izquierdo para pantallas pequeñas */
+    }
+}
+
+/* Alineación en pantallas extra grandes (más de 992px) */
+@media (min-width: 993px) {
+    .texto-personalizado {
+        text-align: right; /* Alineación a la derecha en pantallas extra grandes */
+    }
+}
+
+
+
+#enviarBtn {
+    color: black; /* Color inicial del texto */
+    transition: color 0.3s ease; /* Agrega una transición suave al cambio de color */
+    font-family: 'montserrat';
+    font-size: 16px;
+}
+
+#enviarBtn:hover {
+    color: white; /* Color del texto al pasar el mouse sobre el botón */
+}
+
+
+/* Estilos para la cuadrícula */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Espacio alrededor de la cuadrícula */
+  }
+  
+  .grid-item {
+    flex: 1 0 calc(25% - 20px); /* Cada imagen ocupa inicialmente el 25% del contenedor menos los márgenes */
+    margin: 10px; /* Espacio entre las imágenes */
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+  }
+  
+  /* Media query para hacer la cuadrícula responsiva */
+  @media screen and (max-width: 768px) {
+    .grid-item {
+      flex-basis: calc(100% - 20px); /* En pantallas más pequeñas, cada imagen ocupa el 100% del ancho del contenedor menos los márgenes */
+    }
+  }
+  
+    #back-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #fbbb14;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: 'montserrat';
+    font-weight: bold;
+  }
+
+  #back-to-top-btn.show {
+    display: block;
+  }
+
